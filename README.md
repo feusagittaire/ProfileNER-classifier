@@ -4,7 +4,7 @@
 
 Performs Classification using Regex for social media user's profile categorization and NER tasks
 1. If profile:
-    * Categories: Politician, Information Vehicule, Health Professional, Science, Education Professional, Artist, Organization and Journalist;
+    * Categories: Politician, Information Vehicule, Health Professional, Science (those with scientific/academic background), Education Professional, Artist, Organization and Journalist;
 2. NER: 
     * Vaccines, Products, Drugs, Diseases, Symptoms, Science, Part of the body; returns a dataframe that has information of the entity id, name and it's occurence frequency on the input text.
 
