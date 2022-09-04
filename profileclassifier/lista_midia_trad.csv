@@ -1,0 +1,139 @@
+,midias
+0,o globo
+1,jornal do brasil
+2,jornal do comercio
+3,a tribuna da imprensa
+4,folha dirigida
+5,a voz da serra
+6,tribuna de petropolis
+7,inverta  jornal pra verdade
+8,correio brasiliense
+9,agencia brasil
+10,diariooficial
+11,jornal de brasilia
+12,brasil em tempo real
+13,zero hora
+14,correio do povo
+15,diario popular
+16,folha da cidade
+17,jornal do comercio
+18,jornal nh
+19,jornal vs
+20,diario de canoas
+21,jornal da cidade (torres)
+22,jornal do turfe
+23,jornal brasil de fato (edicao minas gerais)
+24,estado de minas  belo horizonte
+25,jornal gazeta do oeste
+26,hoje em dia  belo horizonte
+27,folha da manha
+28,portal do triangulo
+29,radarnews
+30,jornal dialogo
+31,gazeta online
+32,diario de cuiaba
+33,a critica de campo grande
+34,correio do estado
+35,diario da manha
+36,diario de pernambuco
+37,jornal do commercio
+38,folha de pernambuco
+39,jornal imprensa do agreste
+40,diario da borborema
+41,jornal da paraiba
+42,jornal a uniao
+43,vale paraibano
+44,correio da paraiba
+45,tribuna do norte
+46,gazeta de macau
+47,diario de natal
+48,diario do nordeste
+49,aracati online
+50,correio popular  campinas
+51,diario de sorocaba
+52,diario do grande abc
+53,diario do povo
+54,o estado de sao paulo
+55,folha de sao paulo
+56,jornal da tarde
+57,noticias populares
+58,a tribuna
+59,cruzeiro do sul
+60,folha universal
+61,folha da regiao
+62,diario oficial do estado de sao paulo
+63,gazeta de praia grande
+64,jornal de negocios
+65,voz da terra
+66,jornal todo dia
+67,opatriota
+68,agorasaopaulo
+69,jornal de santa catarina
+70,diario catarinense
+71,jornal o municipio
+72,tribuna catarinense
+73,jornal metropolitano
+74,diario do litoral
+75,folha de londrina
+76,gazeta do povo
+77,tribuna do parana
+78,gazeta do parana
+79,jornal de londrina
+80,gazeta do iguacu
+81,correio da bahia
+82,tribuna da bahia
+83,jornal a tarde
+84,jornal grapiuna
+85,the brazilian
+86,gazeta de sergipe
+87,gazeta de alagoas
+88,jornal de alagoas
+89,tribuna de alagoa
+90,oliberal
+91,jornal do comercio
+92,diario da amazoni
+93,a gazeta
+94,jornal meio norte
+95,jornal o dia
+96,o estado do maranhao
+97,balanco geral
+98,record tv
+99,\btv\b
+100,canal de noticias
+101,jornalismo
+102,jornal.*record
+102,centro.*informacao
+102,\bsbt\b
+103,canal.*noticias
+104,band jornalismo
+105,jornal minas
+106,news
+107,oficial.*emissora
+108,tv brasil
+109,redacao.*tv
+110,oficial.*radio
+111,telejornal
+112,domingo espetacular
+113,rede massa
+114,oficial.*televisao
+115,oficial.*jornal
+116,rede.*comunicacao.*televisao
+117,rede.*televisao
+118,jornalistico
+119,jornal\b
+120,programa.*televi.*
+121,rede.*radio
+122,fundacao tve
+123,\bcnn\b
+124,\buol\b
+125,veiculo
+126,emissora
+125,olhar digital
+126,noticiar
+127,reportage.*
+128,radio
+129,noticia
+130,manchete
+131,principais fatos
+132,o que esta acontecendo
+
