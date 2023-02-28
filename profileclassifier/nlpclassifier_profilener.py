@@ -151,11 +151,11 @@ class NLPClassifier:
 
             for text in self.ner_freq:
                 if re.compile(text).search(bio):
-                    ner_dict['sint'] += 1
+                    ner_dict['freq'] += 1
 
             for text in self.ner_sci:
                 if re.compile(text).search(bio):
-                    ner_dict['freq'] += 1
+                    ner_dict['sci'] += 1
 
             for text in self.ner_partes_corpo:
                 if re.compile(text).search(bio):
