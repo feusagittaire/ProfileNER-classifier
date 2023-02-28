@@ -40,10 +40,13 @@ class NLPClassifier:
         self.ner_vac = ast.literal_eval(ner_data['names'].loc[0])
         self.ner_prod = ast.literal_eval(ner_data['names'].loc[1])
         self.ner_med = ast.literal_eval(ner_data['names'].loc[2])
-        self.ner_sint = ast.literal_eval(ner_data['names'].loc[3])
+        self.ner_freq = ast.literal_eval(ner_data['names'].loc[3])
         self.ner_doenca = ast.literal_eval(ner_data['names'].loc[4])
         self.ner_partes_corpo = ast.literal_eval(ner_data['names'].loc[5])
         self.ner_sci = ast.literal_eval(ner_data['names'].loc[6])
+        self.ner_agente = ast.literal_eval(ner_data['names'].loc[7])
+        self.ner_grave = ast.literal_eval(ner_data['names'].loc[8])
+        self.ner_vac_pol = ast.literal_eval(ner_data['names'].loc[9])
 
         #As youtube has specific content directed to religious groups, those groups i.e channels are going to be classified.
         if youtube:
@@ -146,7 +149,7 @@ class NLPClassifier:
                 if re.compile(text).search(bio):
                     ner_dict['doenca'] += 1
 
-            for text in self.ner_sint:
+            for text in self.ner_freq:
                 if re.compile(text).search(bio):
                     ner_dict['sint'] += 1
 
@@ -157,6 +160,19 @@ class NLPClassifier:
             for text in self.ner_partes_corpo:
                 if re.compile(text).search(bio):
                     ner_dict['partes_corpo'] += 1
+            
+            for text in self.ner_agente:
+                if re.compile(text).search(bio):
+                    ner_dict['agente'] += 1
+
+            for text in self.ner_grave:
+                if re.compile(text).search(bio):
+                    ner_dict['eventos_graves'] += 1
+
+            for text in self.ner_vac_pol:
+                if re.compile(text).search(bio):
+                    ner_dict['vac_pol'] += 1
+            
             
             return ner_dict
             
