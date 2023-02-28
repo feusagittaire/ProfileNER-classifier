@@ -8,4 +8,4 @@
 6,sci,"['metanalise', 'meta analise', 'resultados', 'artigo', 'revista cientifica', 'revistas cientificas', 'nature', 'science', 'literatura', 'lancet', 'revisao de literatura', 'artigos', 'evidencias cientificas', 'publicacao cientifica', 'publicacoes cientificas', 'estudo', 'estudos']"
 7,agente,"['bacteria','virus','parasita','microorganismo','mosquito']"
 8,eventos_raros, "['trombose','anafilaxia','miocardite','miocardite','periocardite','trombocitopenia','guillain','meningite','neurologic.','asma','alergia', 'arritmia', 'insuficiencia cardiaca', 'infarto','avc']
-9,vac_pol, "['vachina', 'vacina chinesa', 'vacina xing', 'vacina do doria','vacina russa']
+9,vac_pol, "['vachina', 'vacina chinesa', 'vacina xing', 'vacina do doria','vacina russa']"
