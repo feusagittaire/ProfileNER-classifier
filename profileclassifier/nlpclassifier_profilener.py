@@ -10,7 +10,7 @@ class NLPClassifier:
     def __init__(self, use, youtube: bool = False):
         uses = ['profile', 'ner']
         self.youtube = youtube
-        ner_data = pd.read_csv(resources.open_binary('profileclassifier','ner_data.csv'))
+        ner_data = pd.read_csv(resources.open_binary('profileclassifier','ner_data.csv'), sep = ',')
         ner_data = ner_data.explode('names')
         if use in uses:
             self.use = use
