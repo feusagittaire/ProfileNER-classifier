@@ -10,7 +10,7 @@ classifiers = [
  
 setup(
   name='ProfileNER-classifier',
-  version='0.8',
+  version='0.9',
   description="Performs Classification using Regex for social media user's profile categorization and NER tasks",
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   long_description_content_type='text/markdown',
