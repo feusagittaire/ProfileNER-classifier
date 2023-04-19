@@ -239,10 +239,10 @@ class NLPClassifier:
         return df
     
         def show_ents(self, doc): 
-        if doc.ents: 
-            for ent in doc.ents: 
-                print(ent.text+' - ' +str(ent.start_char) +' - '+ str(ent.end_char) +' - '+ent.label_+ ' - '+str(spacy.explain(ent.label_))) 
-        else: print('No named entities found.')
+            if doc.ents: 
+                for ent in doc.ents: 
+                    print(ent.text+' - ' +str(ent.start_char) +' - '+ str(ent.end_char) +' - '+ent.label_+ ' - '+str(spacy.explain(ent.label_))) 
+            else: print('No named entities found.')
 
    
 
