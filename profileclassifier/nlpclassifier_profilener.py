@@ -52,6 +52,32 @@ class NLPClassifier:
         if youtube:
             self.religiao = ['igreja','pentecostal','crista','catolic.*','missionaria','islamismo','judaic.*',
             'judaismo','espirita','espiritismo','testemunha de jeova','umbanda','candomble','bispo']
+        
+        def nlp(self,model: str = 'pt_core_news_lg' ):
+        nlp = spacy.load(model, disable = ['ner'])
+        rulerAll = nlp.add_pipe('entity_ruler')
+        for a in self.ner_vac:
+            rulerAll.add_patterns([{"label": "VAC", "pattern": a}]) 
+        
+        for c in self.ner_prod:
+            rulerAll.add_patterns([{"label": "PROD", "pattern": c}])
+        for d in self.ner_med:
+            rulerAll.add_patterns([{"label": "MED", "pattern": d}])
+        for e in self.ner_freq:
+            rulerAll.add_patterns([{"label": "EVENT_FREQ", "pattern": e}])
+        for f in self.ner_grave:
+            rulerAll.add_patterns([{"label": "EVENT_GRAVE", "pattern": f}])
+        for g in self.ner_doenca:
+            rulerAll.add_patterns([{"label": "DOENCA", "pattern": g}])
+        for h in self.ner_partes_corpo:
+            rulerAll.add_patterns([{"label": "PARTES_CORPO", "pattern": h}])
+        for i in self.ner_sci:
+            rulerAll.add_patterns([{"label": "SCI", "pattern": i}])
+        for j in self.ner_agente:
+            rulerAll.add_patterns([{"label": "AGENTE", "pattern": j}])
+        for l in self.ner_vac_pol:
+            rulerAll.add_patterns([{"label": "VAC_POLITCS", "pattern": l}])
+        return nlp
 
 
     def att_profile_list(self,profile,new_words = []):
@@ -203,4 +229,27 @@ class NLPClassifier:
         #df = df.fillna(0).astype(int)
 
         return df
+    
+        def show_ents(self, doc): 
+        if doc.ents: 
+            for ent in doc.ents: 
+                print(ent.text+' - ' +str(ent.start_char) +' - '+ str(ent.end_char) +' - '+ent.label_+ ' - '+str(spacy.explain(ent.label_))) 
+        else: print('No named entities found.')
+
+   
+
+    def ner_en(self, x):
+        ner = []
+        for tok in x.ents:
+            ner.append([tok.text,tok.label_])
+        return ner
+    
+    def get_ner_en(self, df):
+        token = {'tokens':[],'ner':[]}
+        for x in df['ner']:
+            for a,b in x:
+                token['tokens'].append(a)
+                token['ner'].append(b)
+        ner = pd.DataFrame(token)
+        return ner
 
