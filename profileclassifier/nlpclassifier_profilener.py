@@ -4,6 +4,14 @@ import re
 from collections import defaultdict
 import ast
 from importlib import resources
+import spacy
+from spacy.util import minibatch, compounding
+import spacy.lang.pt.examples
+import pt_core_news_lg
+from spacy.pipeline import EntityRuler
+from spacy.tokens import Span
+from spacy.matcher import PhraseMatcher
+from spacy.pipeline import EntityRuler
 
 class NLPClassifier:
 
