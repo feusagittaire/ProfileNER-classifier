@@ -13,6 +13,8 @@ from spacy.tokens import Span
 from spacy.matcher import PhraseMatcher
 from spacy.pipeline import EntityRuler
 
+spacy.cli.download('pt_core_news_lg')
+
 class NLPClassifier:
 
     def __init__(self, use, youtube: bool = False):
