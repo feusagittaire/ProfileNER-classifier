@@ -30,12 +30,12 @@ class NLPClassifier:
         self.artista = ['singer',r'\bcantor',r'\batriz',r'\bator','comediante','youtuber', r'influenciado.* digital']
         midia_tradicional2 = pd.read_csv(resources.open_binary('profileclassifier','lista_midia_trad.csv'), encoding ='utf-8')['midias'].apply(lambda x:str(x).replace( ' ', '')).tolist()
         self.veiculo_info = pd.read_csv(resources.open_binary('profileclassifier','lista_midia_trad.csv'), encoding ='utf-8')['midias'].tolist() +midia_tradicional2
-        self.saude = ['physician ',r'\bnurse','emergency doc',r'medic.*',r'enfermeir.*',r'farmaceutic.*','fisioterapeuta',r'psicologo|psicologa','dentista',r'veterinari.*', 'nutricionista',r'fonoaudiolog.*','sanitarista','epidemiologista', r'(\bdr.\b).*especialista', r'(\bdr.\b).*treinamento fisico']
+        self.saude = ['educacao fisica','physician ',r'\bnurse','emergency doc',r'medic.*',r'enfermeir.*',r'farmaceutic.*','fisioterapeuta',r'psicologo|psicologa','dentista',r'veterinari.*', 'nutricionista',r'fonoaudiolog.*','sanitarista','epidemiologista', r'(\bdr.\b).*especialista', r'(\bdr.\b).*treinamento fisico']
         self.jornalista = ['jornalista', 'reporter', 'cronista','ancora']
         universidades = pd.read_csv(resources.open_binary('profileclassifier','lista_unifederal.csv'), encoding ='utf-8', sep =',')['universidade'].tolist()
         self.org = pd.read_csv(resources.open_binary('profileclassifier','lista_org.csv'), encoding='utf8')['org'].tolist() + ['universidade federal','universidade estadual','universidade de sao paulo']
         self.prof_universidade = ["professor.*"+universidade for universidade in universidades]
-        self.ciencia = [r'mestr. em',r'professor. universitari.','research','scientific',r'\bmsc',r'\bphd', r'doutor.* em', 'doutorado em',r'div.*cientifica', r'divulgador.* cientific.*','cientista','pesquisador','pesquisadora',
+        self.ciencia = [r'mestr. em',r'professor. universi.','research','scientific',r'\bmsc',r'\bphd', r'doutor.* em', 'doutorado em',r'div.*cientifica', r'divulgador.* cientific.*','cientista','pesquisador','pesquisadora',
         'grupo de pesquisa','rede de pesquisa','\bcnpq','comunicacao.*saude'] 
 
         parti = ['brasil247']
